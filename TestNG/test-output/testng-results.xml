@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="169008" started-at="2020-04-21T20:00:39 IST" finished-at="2020-04-21T20:03:28 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="169008" started-at="2020-04-21T20:00:39 IST" finished-at="2020-04-21T20:03:28 IST">
+      <class name="Test.FirstTest">
+        <test-method status="PASS" signature="launch()[pri:0, instance:Test.FirstTest@32709393]" name="launch" is-config="true" duration-ms="99412" started-at="2020-04-21T20:00:41 IST" finished-at="2020-04-21T20:02:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="cd(java.lang.String, java.lang.String)[pri:0, instance:Test.FirstTest@32709393]" name="cd" duration-ms="10138" started-at="2020-04-21T20:02:21 IST" data-provider="ExcelData" finished-at="2020-04-21T20:02:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajisekarcse@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cd -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:Test.FirstTest@32709393]" name="tear" is-config="true" duration-ms="2119" started-at="2020-04-21T20:02:31 IST" finished-at="2020-04-21T20:02:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+        <test-method status="PASS" signature="launch()[pri:0, instance:Test.FirstTest@32709393]" name="launch" is-config="true" duration-ms="26471" started-at="2020-04-21T20:02:33 IST" finished-at="2020-04-21T20:03:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="cd(java.lang.String, java.lang.String)[pri:0, instance:Test.FirstTest@32709393]" name="cd" duration-ms="3599" started-at="2020-04-21T20:03:00 IST" data-provider="ExcelData" finished-at="2020-04-21T20:03:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cd -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:Test.FirstTest@32709393]" name="tear" is-config="true" duration-ms="1713" started-at="2020-04-21T20:03:03 IST" finished-at="2020-04-21T20:03:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+        <test-method status="PASS" signature="launch()[pri:0, instance:Test.FirstTest@32709393]" name="launch" is-config="true" duration-ms="18861" started-at="2020-04-21T20:03:05 IST" finished-at="2020-04-21T20:03:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="cd(java.lang.String, java.lang.String)[pri:0, instance:Test.FirstTest@32709393]" name="cd" duration-ms="3547" started-at="2020-04-21T20:03:24 IST" data-provider="ExcelData" finished-at="2020-04-21T20:03:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test456@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cd -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:Test.FirstTest@32709393]" name="tear" is-config="true" duration-ms="917" started-at="2020-04-21T20:03:27 IST" finished-at="2020-04-21T20:03:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- Test.FirstTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,18 @@
+
+public class RevString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="To be reversed";
+		int i =s1.length();
+		for(int j=i-1;j>=0;j--)
+		{
+			System.out.print(s1.charAt(j));
+		}
+		
+		StringBuffer s2= new StringBuffer(s1);
+		System.out.println(s2.reverse());
+
+	}
+
+}

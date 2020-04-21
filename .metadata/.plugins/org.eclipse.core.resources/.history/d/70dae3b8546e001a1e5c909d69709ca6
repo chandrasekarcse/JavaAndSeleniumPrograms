@@ -1,0 +1,21 @@
+
+public class LargestNo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[]= {5,8,96,52,11};
+		int max=a[0];
+		
+		for(int k:a)
+		{
+			if(max<k)
+			{
+				max=k;
+			}
+		}
+		
+		System.out.println(max);
+
+	}
+
+}

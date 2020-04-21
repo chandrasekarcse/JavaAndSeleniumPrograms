@@ -1,0 +1,33 @@
+
+public class Fib {
+	
+	
+	static void series(int num)
+	{
+		int temp;
+		int i=0;
+		int j=1;
+		int sum;
+		System.out.print(i+ " " +j);
+		for(int k=0;k<num;k++)
+		{
+		sum=i+j; 
+		System.out.print(" " +sum);
+		i=j;
+		j=sum;
+		}
+		/*
+		 * while(k<num) { sum=i+j; System.out.print(i +" "+ j +" " +sum); i=j; j=sum;
+		 * k++; }
+		 */
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		series(10);
+
+	}
+
+}

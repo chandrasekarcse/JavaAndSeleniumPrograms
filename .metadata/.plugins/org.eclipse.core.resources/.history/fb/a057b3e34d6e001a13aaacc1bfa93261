@@ -1,0 +1,9 @@
+
+public  class Parent {
+	
+	static void  firstMethod()
+	{
+		System.out.println("This is parent class method");
+	}
+
+}

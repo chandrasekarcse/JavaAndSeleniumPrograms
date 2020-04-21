@@ -1,0 +1,8 @@
+package Pages;
+
+import Util.TestBase;
+
+public class LoginPage extends TestBase {
+
+	
+}

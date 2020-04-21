@@ -1,0 +1,36 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Practice {
+	
+	
+		
+	
+	
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		String a="a3b4c2k1";
+		char b[]=a.toCharArray();
+		int k=0;
+		for(char c:b)
+		{
+			if(Character.isDigit(c))
+			{
+				int i=Character.getNumericValue(c);
+				for(int j=1;j<=i;j++)
+				{
+					System.out.print(a.charAt(k-1));
+				}
+			}
+			k++;
+		}
+		
+		
+}
+	
+}
+

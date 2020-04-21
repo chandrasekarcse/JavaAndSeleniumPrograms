@@ -1,0 +1,20 @@
+package Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import Util.TestBase;
+
+public class LoginPage extends TestBase {
+	
+	
+
+	@FindBy(linkText="Apply as a Freelancer")
+	WebElement link;
+	
+	void clickReg()
+	{
+		link.click();
+	}
+	
+}

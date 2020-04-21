@@ -1,0 +1,12 @@
+import java.util.HashSet;
+
+public class Collec3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<String> hs = new HashSet<String>();
+		hs.add("One");
+		hs.add("One");
+	}
+
+}

@@ -1,0 +1,26 @@
+
+public class Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "First";
+		String s2 = "Second";
+		String s3 ="FIRST";
+		System.out.println("Char at index 0 is "+s1.charAt(0));
+		
+		System.out.println(s1.compareTo(s2));
+		
+		/*
+		 * s3 = s1.concat(s2); System.out.println(s3);
+		 */
+		
+		System.out.println(s1.contains("ir"));
+		System.out.println(s1.startsWith("Fi"));
+		System.out.println(s1.endsWith("st"));
+		System.out.println(s1.equalsIgnoreCase(s3));
+		
+		System.out.println(s1.indexOf('i'));
+
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+public class Practice {
+	
+	static void replace(String path)
+	{
+		
+	}
+	
+	
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		
+		String s=null;
+		System.out.println(s.length());
+				
+}
+}
+	
+

@@ -1,0 +1,52 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Practice {
+	
+	
+		
+	
+	
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+	
+		
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Enter number of elements");
+			int len=scan.nextInt();
+			int a[]=new int[len];
+			System.out.println("Enter numbers in array");
+			for(int i=0;i<len;i++)
+			{
+				a[i]=scan.nextInt();
+			}
+			
+			int min=a[0];
+			int max=a[1];
+			
+			for(int j:a)
+			{
+				if(min>j)
+				{
+					min=j;
+				}
+				
+				if(max<j)
+				{
+					max=j;
+				}
+			}
+			
+			System.out.println(min+" "+max);
+			
+		
+		}
+			
+				
+}
+	
+

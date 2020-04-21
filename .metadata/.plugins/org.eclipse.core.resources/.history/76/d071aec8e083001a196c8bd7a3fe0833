@@ -1,0 +1,27 @@
+package Test;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import Pages.LoginPage;
+import Util.TestBase;
+
+public class LoginPageTest extends TestBase {
+	
+	LoginPage lp= new LoginPage();
+	
+	@BeforeMethod
+	void launch()
+	{
+		intialize();
+		 
+	}
+	
+	@Test
+	void apply()
+	{
+		
+		
+	}
+
+}

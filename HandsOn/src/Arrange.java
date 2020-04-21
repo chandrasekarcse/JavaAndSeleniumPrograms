@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Arrange {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter the number of elements ");
+		int len= scan.nextInt();
+		int[] arr= new int[len];
+		System.out.println("Enter elements");
+		for(int i=0;i<len;i++)
+		{
+			arr[i]=scan.nextInt();
+		}
+		Arrays.sort(arr);
+		for(int j:arr)
+		{
+			System.out.print(j + " ");
+		}
+		System.out.println("Second largest element is "+ arr[len-2]);
+		System.out.println("Third smallest element is "+arr[2]);
+	}
+
+}

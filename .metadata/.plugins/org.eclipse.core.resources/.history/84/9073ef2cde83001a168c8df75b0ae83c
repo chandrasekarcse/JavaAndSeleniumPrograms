@@ -1,0 +1,51 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+public class Practice {
+	
+	
+	static void replace(String path) throws IOException
+	{
+		File src=new File(path);
+		BufferedReader br = new BufferedReader(new FileReader(src));
+		String old;
+		String newStr="";
+		while((old=br.readLine())!=null)
+		{
+			System.out.println(old);
+			newStr =newStr+old+System.lineSeparator();
+			
+		}
+		
+		System.out.println(newStr);
+		
+		newStr=newStr.replaceAll("replaced", "isReplacedNow");
+		
+		System.out.println(newStr);
+		
+		//FileWriter fr=new FileWriter(src);
+		//fr.write(newStr);
+		
+	}
+	
+	
+	
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		replace("C:\\Users\\Lenovo\\Desktop\\T.txt");
+		
+				
+}
+}
+	
+

@@ -1,0 +1,119 @@
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Practice {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Chromedriver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://learn.letskodeit.com/p/practice");
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		
+		//Radio Button
+		
+		driver.findElement(By.xpath("//input[@id='benzradio']")).click();
+		
+		if(driver.findElement(By.xpath("//input[@id='benzradio']")).isSelected())
+		{
+			System.out.println("Radio button selected");
+		}
+		
+		//Select
+		Select sel =new Select(driver.findElement(By.id("carselect")));
+		sel.selectByVisibleText("Benz");
+		
+		
+		Select sel1= new Select(driver.findElement(By.id("multiple-select-example")));
+		if(sel1.isMultiple())
+		{
+			sel1.selectByIndex(0);
+			Thread.sleep(2000);
+			sel1.deselectAll();
+		}
+		
+		//Checkbox
+		
+		driver.findElement(By.id("bmwcheck")).click();
+		
+		//Multiple windows
+		
+		String parent=driver.getWindowHandle();
+		
+		driver.findElement(By.id("openwindow")).click();
+		
+		Set<String> setString = driver.getWindowHandles();
+		
+		for(String s:setString)
+		{
+			if(!parent.equals(s))
+			{
+				driver.switchTo().window(s);
+				driver.close();
+			}
+			
+		}
+		driver.switchTo().window(parent);
+		
+		driver.findElement(By.linkText("Open Tab")).click();
+		
+		Set<String> setString1 = driver.getWindowHandles();
+		
+		for(String s:setString1)
+		{
+			if(!parent.equals(s))
+			{
+				driver.switchTo().window(s);
+				driver.close();
+			}
+			
+		}
+		driver.switchTo().window(parent);
+		
+		driver.findElement(By.id("alertbtn")).click();
+		
+		System.out.println(driver.switchTo().alert().getText());
+		
+		driver.switchTo().alert().accept();
+		
+		WebElement disp= driver.findElement(By.id("displayed-text"));
+		
+		if(disp.isDisplayed())
+		{
+			driver.findElement(By.id("hide-textbox")).click();
+			Thread.sleep(4000);
+			try {
+				WebDriverWait wt=new WebDriverWait(driver,3);
+				wt.until(ExpectedConditions.visibilityOfElementLocated(By.id("displayed-text")));
+				}
+			catch (Exception e)
+			{
+				driver.findElement(By.id("show-textbox")).click();
+			}
+			
+		}
+		
+		driver.switchTo().frame("courses-iframe");
+		
+		WebElement textbox=driver.findElement(By.id("search-courses"));
+		
+		driver.switchTo().defaultContent();
+		
+		textbox.sendKeys("TEST");
+		
+		driver.close();
+		
+	}
+
+}

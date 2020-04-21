@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Collec {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> ar = new ArrayList<String>();
+		ar.add("One");
+		ar.add("Two");
+		System.out.println("Size of list ar is "+ar.size());
+		
+		ArrayList<String> ar2 = new ArrayList<String>();
+		ar2.add("Three");
+		ar2.add("Four");
+		
+		ar.addAll(ar2);
+		System.out.println("After performing addll size of ar is"+ar.size());
+		System.out.println("Printing elements of ar");
+		for(String s:ar) {
+			System.out.println(s);
+		}
+		
+	}
+
+}

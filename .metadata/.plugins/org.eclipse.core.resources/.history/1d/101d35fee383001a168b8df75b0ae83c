@@ -1,0 +1,31 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+public class Practice {
+	
+	
+	static void replace(String path) throws FileNotFoundException
+	{
+		File src=new File(path);
+		BufferedReader br = new BufferedReader(new FileReader(src));
+		
+	}
+	
+	
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		replace("C:\\Users\\Lenovo\\Desktop\\T.txt");
+		
+				
+}
+}
+	
+
