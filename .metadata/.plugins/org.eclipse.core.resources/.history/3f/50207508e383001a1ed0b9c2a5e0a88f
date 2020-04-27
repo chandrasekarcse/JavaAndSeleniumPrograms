@@ -1,0 +1,37 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class PracticeExcel {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		File src=new File("C:\\Users\\Lenovo\\Desktop\\T.txt");
+		BufferedReader br=new BufferedReader(new FileReader(src));
+		String old;
+		String newText="";
+		while((old=br.readLine())!=null)
+		{
+			newText=newText+old+System.lineSeparator();
+		}
+		System.out.println(newText);
+		newText=newText.replaceAll("LATEST", "TODAY");
+		FileWriter fr=new FileWriter(src);
+		fr.write(newText);
+	}
+
+}

@@ -29,4 +29,6 @@
 			<item value="org.testng.eclipse"/>
 		</list>
 	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>
