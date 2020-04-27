@@ -1,0 +1,28 @@
+package com.qa.Guru99.Test;
+
+import org.junit.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.qa.Guru99.Pages.HomePage;
+import com.qa.Guru99.Pages.LoginPage;
+import com.qa.Guru99.Util.TestBase;
+
+public class LoginTest extends TestBase {
+	
+	LoginPage lp;
+	HomePage hp;
+	
+	@BeforeMethod
+	void launch()
+	{
+		intialize();
+	}
+ 
+	
+	@Test
+	void login()
+	{
+	
+	}
+}

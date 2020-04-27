@@ -1,0 +1,7 @@
+package qa.Pages;
+
+import org.testng.annotations.Test;
+
+public class LoginPage {
+  
+}

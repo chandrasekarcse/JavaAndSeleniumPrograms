@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteName" duration-ms="45744" started-at="2020-04-27T08:51:49Z" finished-at="2020-04-27T08:52:35Z">
+    <groups>
+    </groups>
+    <test name="TestName" duration-ms="45744" started-at="2020-04-27T08:51:49Z" finished-at="2020-04-27T08:52:35Z">
+      <class name="com.qa.Guru99.Test.LoginTest">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.qa.Guru99.Test.LoginTest@799d4f69]" name="launch" is-config="true" duration-ms="24304" started-at="2020-04-27T14:21:49Z" finished-at="2020-04-27T14:22:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.Guru99.Test.LoginTest@799d4f69]" name="login" duration-ms="19609" started-at="2020-04-27T14:22:14Z" finished-at="2020-04-27T14:22:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.qa.Guru99.Test.LoginTest@799d4f69]" name="tear" is-config="true" duration-ms="1808" started-at="2020-04-27T14:22:33Z" finished-at="2020-04-27T14:22:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.qa.Guru99.Test.LoginTest -->
+    </test> <!-- TestName -->
+  </suite> <!-- SuiteName -->
+</testng-results>
