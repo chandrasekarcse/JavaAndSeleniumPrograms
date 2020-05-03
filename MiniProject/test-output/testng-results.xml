@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54422" started-at="2020-04-27T14:26:57 IST" finished-at="2020-04-27T14:27:51 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54422" started-at="2020-04-27T14:26:57 IST" finished-at="2020-04-27T14:27:51 IST">
+      <class name="test.HomePageTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.HomePageTest@1f36e637]" name="beforeMethod" is-config="true" duration-ms="37720" started-at="2020-04-27T14:26:57 IST" finished-at="2020-04-27T14:27:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkTitle()[pri:0, instance:test.HomePageTest@1f36e637]" name="checkTitle" duration-ms="30" started-at="2020-04-27T14:27:35 IST" finished-at="2020-04-27T14:27:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.HomePageTest@1f36e637]" name="afterMethod" is-config="true" duration-ms="1824" started-at="2020-04-27T14:27:35 IST" finished-at="2020-04-27T14:27:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.HomePageTest@1f36e637]" name="beforeMethod" is-config="true" duration-ms="13734" started-at="2020-04-27T14:27:37 IST" finished-at="2020-04-27T14:27:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyManagerID()[pri:1, instance:test.HomePageTest@1f36e637]" name="verifyManagerID" duration-ms="283" started-at="2020-04-27T14:27:50 IST" finished-at="2020-04-27T14:27:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManagerID -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.HomePageTest@1f36e637]" name="afterMethod" is-config="true" duration-ms="719" started-at="2020-04-27T14:27:51 IST" finished-at="2020-04-27T14:27:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
